@@ -17,6 +17,15 @@
   src: url(Montserrat-SemiBold.ttf);
 }
 
+a {
+    /* color: black !important; */
+}
+
+a:hover {
+   text-decoration: none !important;
+   color: none !important;
+}
+
 body{
 height: 100%;
 margin:0;
@@ -31,11 +40,9 @@ font-family: bodyfont;
     padding: 10px 38px !important;
 }
 
-
-
-
-
-
+.colorPar a{
+    color: black;
+}
 
 /**************** Navbar ***************/
 .navbar-light .navbar-nav .nav-link a {
@@ -88,7 +95,7 @@ font-family: bodyfont;
 .profile-blue{
     height: 800px;
     width: 100%;
-    background-image: url(../images/profile-blue.png);
+    background-image: url(../images/profile-blue.svg);
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -132,7 +139,8 @@ font-family: bodyfont;
 }
 
 .second-img{
-    padding-left: 11vw;
+    margin-left: 11vw;
+    width: 68%;
 }
 
 .rotate-text{
@@ -147,6 +155,14 @@ font-family: bodyfont;
     -ms-transform: rotate(-90deg); /* IE 9 */
 }
 
+.rotate-text2{
+    margin-top: 222px;
+    margin-left: -127px;
+    position: absolute;
+    width: 215px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
 .mobile-display img{
     display: none;
 }
@@ -303,10 +319,20 @@ font-family: bodyfont;
 
 
 /******************************* Contact Us *************************/
+.contact-cover1{
+    background-image: url(../images/index-contact1.svg);
+    position: relative;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .contact-cover{
-    background-image: url(../images/contact-blue2.svg);
+    background-image: url(../images/index-blueContact2.svg);
     position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 44px;
 }
 
 .contact-title{
@@ -336,10 +362,15 @@ font-family: bodyfont;
 .display-contact span{
     position: relative;
     font-family: bodyfont;
+    color:white;
 }
 .contact-details{
     display: flex;
 }
+.display-contact a  {
+    text-decoration: none;
+}
+
 .contact-details img{
     width: 44px;
     height: 44px;
@@ -365,8 +396,8 @@ font-family: bodyfont;
     color: white;
 }
 .contact-text2{
-    margin-top: 247px;
-    margin-left: -105px;
+    margin-top: 277px;
+    margin-left: -101px;
     position: absolute;
     -webkit-transform: rotate(-90deg);
     width: 158px;
@@ -394,9 +425,10 @@ font-family: bodyfont;
     font-family: bodyfont;
     font-style: normal;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 140.2%;
     color: #000000;
+    width: 72%;
 }
 
 .project-block{
@@ -410,15 +442,27 @@ font-family: bodyfont;
     margin-top: 35px;
 }
 .img-block1{
-    padding-left: 17%; 
-    padding-top: 8px;
-     width: 50%;
+    margin-left: 18%;
+    padding-top: 23px;
+    position: relative;
+    top: 30px;
+}
+
+.img-block1 img{
+    /* height: 104vh; */
+    width: 76%;
 }
 
 .img-block2{
-    padding-left: 4%;
-     padding-top: 8px;
-     width: 39%;
+    padding-top: 23px;
+    margin-right: 5%;
+    position: relative;
+    top: 30px;
+}
+
+.img-block2 img{
+    /* height: 104vh; */
+    width: 76%;
 }
 
 .blue-back{
@@ -435,6 +479,7 @@ font-family: bodyfont;
     height: 68px;
     margin-top: 26px;
     width: 10px;
+ 
 }
 
 .orange-style :nth-child(2){
@@ -459,11 +504,13 @@ font-family: bodyfont;
     padding-top: 134px;
 }
 .blue-background3{
-    background:url(../images/blue2.png);
-    background-position-x: 0;
-    background-position-y: 324px;
+    background:url(../images/blue-BackImg.svg);
+    background-position-x: 11vw;
+    /* background-position-y: 24vh; */
     background-repeat: no-repeat;
-    /* background-size: cover; */
+    background-size: contain;
+    background-position: bottom;
+    position: relative;
     
 }
 
@@ -497,7 +544,7 @@ font-family: bodyfont;
  }
 
  .back-social{
-     background-image: url(../images/BG.png);
+     background-image: url(../images/BG.svg);
      background-repeat: no-repeat;
      position: relative;
      width: 29px;
@@ -512,10 +559,12 @@ font-family: bodyfont;
 
  /******************** index *****************/
  .img-1 img{
-    width: 100%;
+    width: 72%;
 }
 
-
+.arrows-teams{
+    display: none;
+} 
 
 .custom_btn{
     padding: 30px !important;
@@ -571,6 +620,7 @@ font-family: bodyfont;
   font-family: bodyfont;
   font-style: normal;
   font-weight: normal;
+  cursor: pointer;
 }
 
 .main-back{
@@ -684,7 +734,7 @@ font-family: bodyfont;
 }
 
 .about_us{
-    background-image: url("../images/Group 99.png");
+    background-image: url("../images/Group_991.svg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 650px;
@@ -694,7 +744,7 @@ font-family: bodyfont;
 }
 .about_us .about1{
     position: relative;
-    width: 32%;
+    /* width: 32%; */
 
     background: #FFFFFF;
     border: 1px dashed #485057;
@@ -702,31 +752,32 @@ font-family: bodyfont;
         padding: 0px 20px;
 }
 .about_us .about2{
-    width: 32%;
+    /* width: 32%; */
     background: #FF9100;
         padding: 0px 20px;
         box-sizing: border-box;
 }
 .about_us .about3{
-    width: 32%;
+    /* width: 32%; */
     background: #FFFFFF;
     border: 1px dashed #485057;
     box-sizing: border-box;
         padding: 0px 20px;
 }
 .about_us h3{
-  font-size: 20px;
+    font-size: 16px;
   font-weight: 600;
   color: #28405B;
   font-family: headingfont;
 }
 .about_us p{
-  font-size: 13px;
+font-size: 12px;
   line-height: 172.2%;
   color: #485057;
   padding: 0;
   font-family: bodyfont;
 }
+
 .section7 .heading2{
     padding-left: 35px;
     font-size: 70px;
@@ -775,13 +826,13 @@ font-family: bodyfont;
     font-family: bodyfont;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 13px;
     color: #FFFFFF;
     padding-left: 16px;
 }
 
 .index-design img {
-    width: 20%;
+    width: 19%;
     padding-top: 3%;
     padding-left: 3%;
     padding-bottom: 3%;
@@ -792,13 +843,96 @@ font-family: bodyfont;
      height: 310px;
 }
 
-@media screen and (min-width: 993px) {
-    .main-contact{
-        height:600px;
-    }
+
+/************************ carusal **************/
+
+
+
+.carousel {
+    margin: 0 auto;
+    /* padding: 0 68px; */
 }
 
+.carousel .carousel-item {
+    /* text-align: center; */
+    overflow: hidden;
+    height: 280px;
+}
+
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 68px;
+    background: none;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+    font-size: 28px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin-top: -15px;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+
+
+
+.indexCom :nth-child(1){
+    width: 4%;
+    float: left;
+    position: absolute;
+    top: 12px;
+}
+
+.indexCom :nth-child(2){
+    margin-top: 28px;
+    width: 252px;
+}
+
+
+.blue-backIndex {
+    background: url(../images/blue-background.png);
+    height: 173px;
+    width: 100%;
+    margin-bottom: 136px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 991px) and (min-width: 767px) {
+
+
+    .indexCom :nth-child(2) {
+        margin-top: 35px;
+        width: 202px;
+    }
+    .blue-backIndex {
+        height: 150px;
+    }
 
     .profile-blue h1 {
         font-size: 5vw;
@@ -818,7 +952,9 @@ font-family: bodyfont;
     .rotate-text{
         display: none;
     }
-
+    .rotate-text2{
+        display: none;
+    }
     .v-distance {
         padding-top: 44px;
     }
@@ -840,7 +976,7 @@ font-family: bodyfont;
     font-size: 12px;
 }
 .about_us h3 {
-    font-size: 19px;
+    font-size: 16px;
 }
 
 .about_us .about3  {
@@ -922,7 +1058,9 @@ font-family: bodyfont;
 .img-1 img{
     width: 100%;
 }
-
+.img-text {
+    width: 100%;
+}
 .banner1 .m_heading{
     font-size: 3vw;
     top: 110px;
@@ -1030,10 +1168,18 @@ font-family: bodyfont;
     color: white;
     font-size: 1.6vw;
 }
-
 }
 
 @media screen and (max-width: 766px) and (min-width: 576px)  {
+    .indexCom :nth-child(2) {
+        margin-top: 25px;
+        width: 165px;
+    }
+
+    .blue-backIndex {
+        height: 122px;
+
+    }
 
     .profile-blue h1 {
         font-size: 6vw;
@@ -1054,6 +1200,10 @@ font-family: bodyfont;
         display: none;
     }
 
+    .rotate-text2{
+        display: none;
+    }
+
     .v-distance {
         padding-top: 44px;
     }
@@ -1068,11 +1218,13 @@ font-family: bodyfont;
     }
     .about_us{
         background-image: none;
+        height: 532px;
     }
     .mobile-display img{
         display: block;
         padding-left: 10%;
         width: 94%;
+        padding-right: 10%
     }
 
     .about_us .about1 {
@@ -1168,6 +1320,20 @@ font-family: bodyfont;
     /***** index ***********/
     .img-1 img{
         width: 100%;
+    }
+
+    .img-text {
+        font-size: 0.8rem;
+        line-height: 138.2%;
+        width: 100%;
+    }
+
+    .contact-cover1 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 194vh;
+        top: -83px;
     }
     .arrows img{
         width: 37%;
@@ -1288,6 +1454,10 @@ font-family: bodyfont;
 
 @media screen and (max-width: 575px) and (min-width: 320px)  {
 
+    .indexCom :nth-child(2) {
+        width: 258px;
+    }
+
 
     .profile-blue h1 {
         font-size: 7vw;
@@ -1305,6 +1475,10 @@ font-family: bodyfont;
     }
 
     .rotate-text{
+        display: none;
+    }
+
+    .rotate-text2{
         display: none;
     }
 
@@ -1477,22 +1651,35 @@ font-family: bodyfont;
     }
 
     .img-block1{
-        padding-left: 17%;
+        /* padding-left: 17%; */
         padding-top: 8px;
         width: 97%;
         display: block;
+        margin-left: 23%;
     }
 
     .img-block2{
-        padding-left: 17%;
+        /* padding-left: 17%; */
         padding-top: 50px;
         width: 97%;
         display: block;
+        margin-left: 23%;
     }
 
     /******************** index ********************/
+    .arrows-teams{
+        display: initial;
+    } 
+
+    .contact-cover1 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 140vh;
+        top: -83px;
+    }
     .img-1 img{
-        width: 100%;
+        width: 74%;
     }
 
     .desktop-main{
@@ -1546,7 +1733,7 @@ font-family: bodyfont;
    .second {
     /* background-size: contain; */
     background-repeat: no-repeat;
-    height: 60vh;
+    height: 43vh;
     position: relative;
     margin-top: -23px; 
     background-position-y: 0;
@@ -1555,10 +1742,10 @@ font-family: bodyfont;
 }
 
 .second .bye {
-    top: -15px;
+    top: -5px;
     margin-left: 4%;
     z-index: 50;
-    height: 95px;
+    height: 21vw;
     position: absolute;
 }
 .second .bye2{
@@ -1571,12 +1758,13 @@ font-family: bodyfont;
 .second p {
     float: left;
     position: relative;
-    top: 45vh;
+    top: 33vh;
     margin-left: 4%;
     color: white;
     text-decoration-line: underline;
     font-family: bodyfont;
-    font-size: 12px;
+    font-size: 11px;
+  
 }
 
 .second :nth-child(1) {
@@ -1648,3 +1836,12 @@ font-family: bodyfont;
          }
     
 }
+
+
+
+
+
+
+
+
+
