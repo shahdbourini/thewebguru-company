@@ -18,7 +18,7 @@
 }
 
 a {
-    /* color: black !important; */
+    /* color: none !important; */
 }
 
 a:hover {
@@ -87,6 +87,7 @@ font-family: bodyfont;
 
 .display-profile2 span{
     font-size: 13px;
+    color:black;
 }
 .profile-orange{
     height: 169px;
@@ -513,6 +514,9 @@ font-family: bodyfont;
     position: relative;
     
 }
+.display-contact h6{
+    color:white;
+}
 
  /******************** footer ***************/
  
@@ -585,13 +589,13 @@ font-family: bodyfont;
   font-size: 3.5vw;
   color: white;
   position: relative;
-  top: 115px;
+  top: 62px;
   margin-left: 23%;
   font-family: headingfont;
 }
 .banner1 .subheading{
     position: relative;
-    top: 110px;
+    top: 57px;
     margin-left: 23%;
     font-size: 3.5vw;
     color: #28405B;
@@ -600,10 +604,10 @@ font-family: bodyfont;
 .banner1 p {
     color: #485057;
     position: relative;
-    top: 115px;
+    top: 77px;
     margin-left: 23%;
     line-height: 3vw;
-    font-size: 1.4vw;
+    font-size: 1.3vw;
     font-family: bodyfont;
     font-style: normal;
     font-weight: normal;
@@ -613,7 +617,7 @@ font-family: bodyfont;
   width: 184px;
   height: 56px;
   margin-left: 23%;
-  top: 11vw;
+  top: 7vw;
   background: #243A55;
   border-radius: 10px;
   color: white;
@@ -628,6 +632,7 @@ font-family: bodyfont;
   background-position-y: 427px;
   background-repeat: no-repeat;
   display: flex;
+  background-size: cover;
 }
 
 
@@ -639,7 +644,7 @@ font-family: bodyfont;
   position: relative;
   margin-top: 30px;
   height: 539px;
-    background-position-x: 87px;
+  background-position-x: 107px;
     width: 50vw;
     margin-bottom: 105px;
 }
@@ -846,68 +851,89 @@ font-size: 12px;
 
 /************************ carusal **************/
 
-
-
-.carousel {
-    margin: 0 auto;
-    /* padding: 0 68px; */
+.img-2 img {
+    width: 64%;
+    /* height: 100vh; */
 }
-
-.carousel .carousel-item {
-    /* text-align: center; */
-    overflow: hidden;
-    height: 280px;
-}
-
-
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 68px;
-    background: none;
-}
-
-.carousel-control-prev i,
-.carousel-control-next i {
-    font-size: 28px;
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    margin-top: -15px;
-    z-index: 5;
-    left: 0;
-    right: 0;
-    color: rgba(0, 0, 0, 0.8);
-    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
-}
-
 
 
 .indexCom :nth-child(1){
-    width: 4%;
-    float: left;
-    position: absolute;
-    top: 12px;
+    width: 14px;
+    position: relative;
+    top: -43px;
 }
 
 .indexCom :nth-child(2){
-    margin-top: 28px;
-    width: 252px;
+    width: 83%;
+    padding-top: 13%;
 }
 
 
-.blue-backIndex {
-    background: url(../images/blue-background.png);
-    height: 173px;
-    width: 100%;
-    margin-bottom: 136px;
+@media (max-width: 575px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+
+    /* .img-2 img {
+        width: 62%;
+        height: 312px;
+    } */
 }
 
+/* large - display 3 */
+@media (min-width: 992px) {
 
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33%);
+    }
 
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33%);
+    }
+}
 
+@media (max-width: 757px) {
 
+    .img-2{
+        padding-left: 12%;
+    
+    }
+    .img-2 img {
+        height: 100vh;
+    }
+    .img-text {
+        width: 76%;
+        /* padding-left: 12%; */
+    }
 
+    .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
+}
 
 
 
@@ -926,10 +952,9 @@ font-size: 12px;
 @media screen and (max-width: 991px) and (min-width: 767px) {
 
 
-    .indexCom :nth-child(2) {
-        margin-top: 35px;
-        width: 202px;
-    }
+ 
+
+
     .blue-backIndex {
         height: 150px;
     }
@@ -1073,8 +1098,9 @@ font-size: 12px;
   }
   .banner1 p {
     margin-left: 19%;
-    line-height: 7vh;
+    line-height: 6vh;
     font-size: 14px;
+    top: 142px;
   }
   .banner1 button{
     width: 111px;
@@ -1144,8 +1170,9 @@ font-size: 12px;
     float: right;
     position: relative;
     top: 314px;
-    margin-right: 9%;
+    margin-right: 21%;
     font-size: 12px;
+    color: black;
   }
 
 .main-dist{
@@ -1164,17 +1191,30 @@ font-size: 12px;
     display: none;
   }
 
+  .footer-mobile ul li a{
+    font-size: 1.2vw;
+}
+  }
   .footer ul li a {
     color: white;
-    font-size: 1.6vw;
-}
+    font-size: 1.1vw;
 }
 
+.blueBack-index{
+    height: 199px;
+}
+
+.indexCom :nth-child(1) {
+    width: 4%;
+    position: relative;
+    top: -27px;
+}
+
+
+
+
 @media screen and (max-width: 766px) and (min-width: 576px)  {
-    .indexCom :nth-child(2) {
-        margin-top: 25px;
-        width: 165px;
-    }
+
 
     .blue-backIndex {
         height: 122px;
@@ -1332,8 +1372,8 @@ font-size: 12px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 194vh;
-        top: -83px;
+        height: 87vh;
+        top: -19px;
     }
     .arrows img{
         width: 37%;
@@ -1373,7 +1413,7 @@ font-size: 12px;
         top: 58px;
         margin-left: 7%;
         line-height: 4vw;
-        font-size: 3vw;
+        font-size: 2.5vw;
     }
 
    .banner1 button {
@@ -1454,9 +1494,6 @@ font-size: 12px;
 
 @media screen and (max-width: 575px) and (min-width: 320px)  {
 
-    .indexCom :nth-child(2) {
-        width: 258px;
-    }
 
 
     .profile-blue h1 {
@@ -1807,8 +1844,16 @@ font-size: 12px;
         height: 296px;
     }
 
-    .lead3{
-        display: none;
+ 
+
+
+    .blueBack-index {
+        height: 154px;
+    }
+
+    .indexCom :nth-child(2) {
+        width: 69%;
+        padding-top: 6%;
     }
 
     /*******************footer ***********/
@@ -1830,6 +1875,7 @@ font-size: 12px;
     .display-contact span {
         font-size: 11px;
     }
+ 
 
     .height-img-contact{
         height: 367px;
