@@ -40,6 +40,14 @@ font-family: bodyfont;
     padding: 10px 38px !important;
 }
 
+
+.navbar-light .navbar-nav .nav-link {
+    color:#28405B !important;
+    font-size: 14px !important;
+    font-family: headingfont !important;
+    text-decoration: none !important;
+}
+
 .colorPar a{
     color: black;
 }
@@ -186,7 +194,7 @@ font-family: bodyfont;
     font-family: bodyfont;
     font-style: normal;
     font-weight: 500;
-    font-size: 2.1vw;
+    font-size: 1.8vw;
     color: #FFFFFF;
     padding-left: 16px;
 }
@@ -397,7 +405,7 @@ font-family: bodyfont;
     color: white;
 }
 .contact-text2{
-    margin-top: 277px;
+    margin-top: 286px;
     margin-left: -101px;
     position: absolute;
     -webkit-transform: rotate(-90deg);
@@ -570,6 +578,10 @@ font-family: bodyfont;
     display: none;
 } 
 
+.indexCom p{
+    color:black;
+    text-align: center;
+}
 .custom_btn{
     padding: 30px !important;
 }
@@ -694,6 +706,7 @@ font-family: bodyfont;
   position: relative;
   top: 313px;
   width: 55%;
+  height: 29px;
 }
 .second p{
   float: right;
@@ -742,10 +755,10 @@ font-family: bodyfont;
     background-image: url("../images/Group_991.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    height: 650px;
+    height: 680px;
     margin-top: 90px;
     position: relative;
-    background-position-x: 203px;
+    background-position-x: 30%;
 }
 .about_us .about1{
     position: relative;
@@ -754,13 +767,16 @@ font-family: bodyfont;
     background: #FFFFFF;
     border: 1px dashed #485057;
     box-sizing: border-box;
-        padding: 0px 20px;
+    padding: 0px 20px;
+    top:-22px;
 }
 .about_us .about2{
     /* width: 32%; */
     background: #FF9100;
         padding: 0px 20px;
         box-sizing: border-box;
+        top:-22px;
+        position: relative;
 }
 .about_us .about3{
     /* width: 32%; */
@@ -768,6 +784,8 @@ font-family: bodyfont;
     border: 1px dashed #485057;
     box-sizing: border-box;
         padding: 0px 20px;
+        top:-22px;
+        position: relative;
 }
 .about_us h3{
     font-size: 16px;
@@ -811,12 +829,15 @@ font-size: 12px;
     color: #FF9100;
     font-size: 22px;
     font-family: headingfont;
+    padding-top: 33px;
+    margin-left: 5%;
 
 }
 .team_container p{
-  font-size: 13px;
-  color: white;
-  font-family: bodyfont;
+    font-size: 12px;
+    color: white;
+    font-family: bodyfont;
+    padding-left: 5%;
 }
 
 .mainSkills-font{
@@ -824,7 +845,7 @@ font-size: 12px;
 }
 
 .main-contact{
-  margin-top: 92px
+    margin-top: 161px;
 }
 
  .index-design span {
@@ -857,18 +878,48 @@ font-size: 12px;
 }
 
 
-.indexCom :nth-child(1){
+/* .indexCom :nth-child(1){
     width: 14px;
     position: relative;
     top: -43px;
-}
+} */
 
 .indexCom :nth-child(2){
     width: 83%;
     padding-top: 13%;
 }
 
+.blueBack-index{
+    background:url(../images/blue-background.png);
+    height: 178px;
+    width: 100%;
+    margin-bottom: 136px;
+}
 
+.indexCom :nth-child(1) {
+    width: 4%;
+    position: relative;
+    top: -33px;
+}
+
+.carousel-inner1 > .item {
+    transform: translate3d(0,0,0) !important;
+  }
+
+.carousel-inner1 .carousel-item-right.active,
+.carousel-inner1 .carousel-item-prev {
+    transform: translateX(50%);
+    transition:  ease-in-out;
+    z-index:3;
+
+}
+
+ .carousel-inner1.carousel-item-left.active,
+.carousel-inner1.carousel-inner .carousel-item-next {
+    /* transform: translateX(-50%); */
+    transition:  ease-in-out;
+
+}
 @media (max-width: 575px) {
 
     .carousel-inner .carousel-item-right.active,
@@ -881,47 +932,39 @@ font-size: 12px;
         transform: translateX(-50%);
     }
 
-    /* .img-2 img {
-        width: 62%;
-        height: 312px;
-    } */
 }
 
 /* large - display 3 */
-@media (min-width: 992px) {
+@media (min-width: 576px) {
 
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
+    .container{
+        padding-left: 10%;
+    }
+
+ 
+
+    .carousel-inner2 .carousel-item-right.active,
+    .carousel-inner2 .carousel-item-next {
         transform: translateX(33%);
     }
 
-    .carousel-inner .carousel-item-left.active,
-    .carousel-inner .carousel-item-prev {
+    .carousel-inner2 .carousel-item-left.active,
+    .carousel-inner2 .carousel-item-prev {
         transform: translateX(-33%);
     }
 }
 
 @media (max-width: 757px) {
 
-    .img-2{
-        padding-left: 12%;
-    
-    }
-    .img-2 img {
-        height: 100vh;
-    }
-    .img-text {
-        width: 76%;
-        /* padding-left: 12%; */
-    }
 
+/* 
     .carousel-inner .carousel-item>div {
-        display: none;
+        display: flex;
     }
 
     .carousel-inner .carousel-item>div:first-child {
-        display: block;
-    }
+        display: flex;
+    } */
 }
 
 .carousel-inner .carousel-item.active,
@@ -940,7 +983,44 @@ font-size: 12px;
 
 
 
+@media screen and (max-width: 1024px) and (min-width: 992px) {
 
+    .second p {
+        top: 289px;
+        margin-right: 17%;
+        font-size: 13px;
+    }
+
+    .container{
+        padding-left: 10%;
+    }
+
+
+    .blueBack-index {
+        height: 151px;
+    }
+
+    .indexCom :nth-child(1) {
+        width: 4%;
+        position: relative;
+        top: -28px;
+    }
+
+    .indexCom :nth-child(2) {
+        top: 0px;
+        position: relative;
+    }
+
+    .img-text {
+        font-size: 0.7rem;
+        width: 64%;
+    }
+
+    .indexCom p {
+        position: relative;
+        top: 16px;
+    }
+}
 
 
 
@@ -951,8 +1031,23 @@ font-size: 12px;
 
 @media screen and (max-width: 991px) and (min-width: 767px) {
 
+    .container{
+        padding-left: 10%;
+    }
 
- 
+    .indexCom :nth-child(2) {
+        position: relative;
+        top: -8px;
+    }
+
+    .indexCom p {
+        position: relative;
+        top: 21px;
+    }
+
+    .blueBack-index {
+        height: 153px;
+    }
 
 
     .blue-backIndex {
@@ -991,29 +1086,31 @@ font-size: 12px;
 
 
  .about_us{
-    position: relative;
-    background-position-x: 65px;
-    height: 693px;
+    background-position-x: 14%;
+    height: 168vh;
  }
 
 
  .about_us p {
-    font-size: 12px;
+    font-size: 10px;
 }
 .about_us h3 {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .about_us .about3  {
-    width: 48%;
+    /* width: 48%; */
+    top: -38px;
 }
 
 .about_us .about2  {
-    width: 48%;
+    top: -38px;
+    /* width: 48%; */
 }
 
 .about_us .about1  {
-    width: 48%;
+    /* width: 48%; */
+    top: -38px;
 }
 
 /*******teams********/
@@ -1083,9 +1180,14 @@ font-size: 12px;
 .img-1 img{
     width: 100%;
 }
-.img-text {
-    width: 100%;
-}
+
+    .img-text {
+        width: 70%;
+        font-size: 0.7rem;
+    }
+    .section2 p {
+        font-size: 19px;
+    }
 .banner1 .m_heading{
     font-size: 3vw;
     top: 110px;
@@ -1099,7 +1201,7 @@ font-size: 12px;
   .banner1 p {
     margin-left: 19%;
     line-height: 6vh;
-    font-size: 14px;
+    font-size: 13px;
     top: 142px;
   }
   .banner1 button{
@@ -1107,7 +1209,7 @@ font-size: 12px;
     height: 40px;
     margin-left: 16%;
     font-size: 13px;
-    top: 34vh;
+    top: 55vh;
   }
   
   .main-back{
@@ -1169,10 +1271,9 @@ font-size: 12px;
   .second p{
     float: right;
     position: relative;
-    top: 314px;
-    margin-right: 21%;
+    top: 317px;
+    margin-right: 15%;
     font-size: 12px;
-    color: black;
   }
 
 .main-dist{
@@ -1185,7 +1286,21 @@ font-size: 12px;
 }
 .index-leaders img{
     width:100% ;
-     height: 235px;
+    height: 175px;
+}
+
+.team_container h3 {
+
+    font-size: 13px;
+    margin-top: 22px;
+    padding-left: 16%;
+
+}
+
+.team_container p {
+    width: 84%;
+    font-size: 9px;
+    padding-left: 18%;
 }
 .footer-mobile{
     display: none;
@@ -1194,26 +1309,81 @@ font-size: 12px;
   .footer-mobile ul li a{
     font-size: 1.2vw;
 }
-  }
-  .footer ul li a {
+.footer ul li a {
     color: white;
     font-size: 1.1vw;
 }
 
-.blueBack-index{
-    height: 199px;
+/* .blueBack-index{
+    height: 111px;
+} */
+
+.indexCom :nth-child(2) {
+    width: 100%;
+    padding-top: 22px;
 }
 
 .indexCom :nth-child(1) {
     width: 4%;
     position: relative;
-    top: -27px;
+    top: 53px;
+}
+
+
+.arrows img{
+    width: 22%;
+}
+
+.contact-cover {
+    margin-top: 27px;
+}
+
+.contact-text-mobile img{
+    margin-top: 27px;
+}
+
+.contact-text2 {
+    margin-top: 327px;
+}
+
+.display-contact span {
+    font-size: 12px;
+}
+
+.display-contact h6 {
+    font-size: 16px;
+}
+
+
+.custom_btn button {
+    width: 133px;
+    height: 42px;
+    font-size: 12px;
+    margin-left: 12%;
 }
 
 
 
 
+
+
+  }
+
+
 @media screen and (max-width: 766px) and (min-width: 576px)  {
+
+
+    
+ 
+
+    .container{
+        padding-left: 10%;
+    }
+
+    .footer ul li a {
+        font-size: 13px;
+    }
+
 
 
     .blue-backIndex {
@@ -1376,7 +1546,7 @@ font-size: 12px;
         top: -19px;
     }
     .arrows img{
-        width: 37%;
+        width: 22%;
     }
 
     .desktop-main{
@@ -1470,7 +1640,7 @@ font-size: 12px;
         display: none;
     }
     .index-design span {
-        font-size: 2.1vw;
+        font-size: 1.5vw;
         padding-left: 9px;
     }
     .index-leaders img {
@@ -1483,17 +1653,64 @@ font-size: 12px;
       .footer-mobile{
         display: block;
     }
+
+    .team_container h3 {
+        font-size: 16px;
+        margin-top: 19px;
+    }
+
+    .team_container p {
+        font-size: 9px;
+    }
     
+    .index-leaders img {
+        height: 177px;
+    }
 /**************** contact ****************/
     .height-img-contact{
     height: 367px;
      }
+
+     .custom_btn button {
+        width: 133px;
+        height: 42px;
+        font-size: 12px;
+        margin-left: 12%;
+    }
+
 
 }
 
 
 @media screen and (max-width: 575px) and (min-width: 320px)  {
 
+    /* .carousel-inner .carousel-item>div {
+        display: flex;
+    } */
+
+    .carousel-inner .carousel-item>div:first-child {
+        display: flex;
+    }
+    
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(100%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-100%);
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 9px !important;
+    }
+
+
+    .indexCom :nth-child(1) {
+        top: -45px;
+    }
 
 
     .profile-blue h1 {
@@ -1535,13 +1752,13 @@ font-size: 12px;
 
     .about_us{
         background-image: none;
+        height: 560px;
     }
-    .mobile-display img{
+    .mobile-display img {
         display: block;
         padding-left: 10%;
         width: 94%;
-        margin-top: 62px;
-        height: 500px;
+        margin-top: 0;
     }
 
     .about_us .about1 {
@@ -1704,6 +1921,35 @@ font-size: 12px;
     }
 
     /******************** index ********************/
+
+    .img-2{
+        padding-left: 12%;
+    
+    }
+    .img-2 img {
+        /* height: 100vh; */
+        width:60%;
+    }
+    .img-text {
+        width: 70%;
+        /* padding-left: 12%; */
+        font-size: 10px;
+    }
+
+    .indexCom p{
+        font-size: 11px;
+        text-align: center;
+    }
+
+    
+    .about_us h3 {
+        font-size: 14px;
+    }
+
+    .about_us p {
+        font-size: 10px;
+    }
+
     .arrows-teams{
         display: initial;
     } 
@@ -1750,27 +1996,37 @@ font-size: 12px;
     }
 
     .banner1 p {
-        top: 8vh;
+        top: 11vh;
         margin-left: 7%;
         line-height: 21px;
-        font-size: 13px;
+        font-size: 12px;
         font-family: bodyfont;
 
     }
 
    .banner1 button {
-    width: 101px;
-    height: 39px;
+    width: 90px;
+    height: 34px;
     margin-left: 6%;
-    top: 10vh;
+    top: 17vh;
     border-radius: 10px;
-    font-size: 12px;
+    font-size: 10px;
    }
 
+   .header-logo img{
+    width: 162px;
+   }
+
+   .custom_btn button {
+    width: 88px;
+    height: 30px;
+    font-size: 8px;
+    margin-left: 9%;
+}
    .second {
     /* background-size: contain; */
     background-repeat: no-repeat;
-    height: 43vh;
+    height: 51vh;
     position: relative;
     margin-top: -23px; 
     background-position-y: 0;
@@ -1795,12 +2051,12 @@ font-size: 12px;
 .second p {
     float: left;
     position: relative;
-    top: 33vh;
+    top: 38vh;
     margin-left: 4%;
     color: white;
     text-decoration-line: underline;
     font-family: bodyfont;
-    font-size: 11px;
+    font-size: 9px;
   
 }
 
@@ -1836,33 +2092,59 @@ font-size: 12px;
         display: none;
     }
     .index-design span {
-        font-size: 2.1vw;
-        padding-left: 6px;
+        font-size: 1.5vw;
+        padding-left: 3px;
     }
     .index-leaders img {
-        width: 100%;
-        height: 296px;
+        height: 201px;
     }
+    .team_container h3 {
+        font-size: 16px;
+        padding-left: 16%;
+         margin-top: 16px;
+    }
+
+    .team_container p {
+        font-size: 8px;
+        text-align: center;
+        width: 82%;
+    }    
 
  
 
 
     .blueBack-index {
-        height: 154px;
+        background-image: none;
+        height: 159px;
+       margin-bottom: 15px;
     }
 
+    .indexCom{
+        padding-left: 11%;
+    }
     .indexCom :nth-child(2) {
         width: 69%;
         padding-top: 6%;
+        margin-left: 3%;
+    }
+    .indexCom p{
+        padding-top: 17px;
+        color: black;
+        margin-left: -13%;
+        font-size: 13px;
+
     }
 
     /*******************footer ***********/
     .footer-copyright{
-        font-size: 4vw;
+        font-size: 2.5vw;
     }
 
+    .footer {
+        margin-top: 10px;
+    }
     .footer ul li a {
-        font-size: 4vw;
+        font-size: 11px;
     }
     .footer-desktop{
       display: none;
