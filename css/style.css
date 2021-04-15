@@ -921,7 +921,7 @@ font-size: 12px;
     transition:  ease-in-out;
 
 }
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
 
     .carousel-inner .carousel-item-right.active,
     .carousel-inner .carousel-item-next {
@@ -933,7 +933,7 @@ font-size: 12px;
         transform: translateX(-50%);
     }
 
-}
+} */
 
 /* large - display 3 */
 @media (min-width: 576px) {
@@ -955,18 +955,6 @@ font-size: 12px;
     }
 }
 
-@media (max-width: 757px) {
-
-
-/* 
-    .carousel-inner .carousel-item>div {
-        display: flex;
-    }
-
-    .carousel-inner .carousel-item>div:first-child {
-        display: flex;
-    } */
-}
 
 .carousel-inner .carousel-item.active,
 .carousel-inner .carousel-item-next,
@@ -1712,6 +1700,30 @@ font-size: 12px;
     }
 
 
+    .carousel-inner2 > .item {
+        transform: translate3d(0,0,0) !important;
+      }
+    
+    .carousel-inner2 .carousel-item-right.active,
+    .carousel-inner2 .carousel-inner.carousel-item-prev {
+        transform: translateX(-100%);
+        /* transition: 0ms ease-in-out; */
+        z-index:3;
+        opacity: 0;
+    
+    }
+    
+     .carousel-inner2.carousel-item-left.active,
+    .carousel-inner2.carousel-inner .carousel-item-next {
+        transform: translateX(100%);
+        /* transition: 0ms ease-in-out; */
+        z-index:50;
+        opacity: 0;
+    
+    }
+
+
+
 
 
     .index-design{
@@ -1731,7 +1743,7 @@ font-size: 12px;
     }
     
 
-    .carousel-inner2 .carousel-inner.carousel-item-right.active,
+    /* .carousel-inner2 .carousel-inner.carousel-item-right.active,
     .carousel-inner2 .carousel-inner.carousel-item-next {
         transform: translateX(100%);
         opacity: 0;
@@ -1743,7 +1755,7 @@ font-size: 12px;
         transform: translateX(-100%);
         opacity: 0;
         transition: 5ms ease-in-out;
-    }
+    } */
 
     .navbar-light .navbar-nav .nav-link {
         font-size: 9px !important;
@@ -2000,8 +2012,8 @@ font-size: 12px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 140vh;
-        top: -83px;
+        height: 49vh;
+        top: -7px;
     }
     .img-1 img{
         width: 74%;
@@ -2134,7 +2146,7 @@ font-size: 12px;
         display: none;
     }
     .index-design span {
-        font-size: 7px;
+        font-size: 0.4rem;
         padding-left: 3px;
     }
     .index-leaders img {
@@ -2183,7 +2195,7 @@ font-size: 12px;
     }
 
     .footer {
-        margin-top: 10px;
+        margin-top: 61px;
     }
     .footer ul li a {
         font-size: 11px;
