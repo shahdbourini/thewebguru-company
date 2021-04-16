@@ -613,14 +613,20 @@ button at top right corner */
      background-color: white;
  }
 
- .back-social{
-     background-image: url(../images/BG.svg);
-     background-repeat: no-repeat;
+
+
+ .back-social :nth-child(1){
      position: relative;
-     width: 29px;
-     background-size: contain;
      cursor: pointer;
+     display: flex;
  }
+
+ .back-social :nth-child(2){
+    margin-left: -18px;
+    margin-bottom: 1px;
+    width: 46%;
+    position: relative;
+}
 
  .footer-copyright{
     font-family: bodyfont;
@@ -2099,8 +2105,7 @@ font-size: 12px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 49vh;
-        top: -7px;
+        height: 345px;
     }
     .img-1 img{
         width: 74%;
