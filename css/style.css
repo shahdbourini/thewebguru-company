@@ -48,9 +48,67 @@ font-family: bodyfont;
     text-decoration: none !important;
 }
 
+.sidebar ul li a {
+    color:#28405B ;
+    font-size: 14px ;
+    font-family: headingfont ;
+    text-decoration: none ;
+    margin-left: 17px;
+}
+
+.sidebar ul li{
+    border-bottom: 1px solid #e1dada;
+}
+
 .colorPar a{
     color: black;
 }
+
+.navbar-light .navbar-toggler {
+    color:white !important;
+    border-color: white !important;
+}
+
+/* The sidebar menu */
+.sidebar {
+
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width */
+    position: fixed;
+    /* Fixed place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: white;
+    /* Disable horizontal scroll */
+    overflow-x: hidden;
+    /* Place content 60px from the top */
+    padding-top: 28px;
+    /* margin-right: 10%; */
+    border-radius: 13px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px, rgb(0 0 0 / 19%) 0px 6px 20px 0px;
+}
+
+.sidebar ul li a:active {
+  color: #ff9100;
+}
+
+/* Position and style the close
+button at top right corner */
+.sidebar .closebtn {
+    position: absolute;
+    top: -8px;
+    right: 14px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #ff9100;
+}
+
+
+
+
 
 /**************** Navbar ***************/
 .navbar-light .navbar-nav .nav-link a {
@@ -62,7 +120,7 @@ font-family: bodyfont;
 }
 .navbar-light .navbar-brand {
     color: rgba(0,0,0,.9);
-    padding-left: 5%;
+    /* padding-left: 20%; */
 }
 .navbar-toggle
 {
@@ -94,7 +152,7 @@ font-family: bodyfont;
 }
 
 .display-profile2 span{
-    font-size: 13px;
+    font-size: 12px;
     color:black;
 }
 .profile-orange{
@@ -712,7 +770,7 @@ font-family: bodyfont;
   float: right;
   position: relative;
   top: 286px;
-  margin-right: 20%;
+  margin-right: 25%;
   font-family: bodyfont;
   font-style: normal;
   font-weight: normal;
@@ -974,6 +1032,7 @@ font-size: 12px;
 
 @media screen and (max-width: 1024px) and (min-width: 992px) {
 
+ 
     .second p {
         top: 289px;
         margin-right: 17%;
@@ -1019,6 +1078,11 @@ font-size: 12px;
 
 
 @media screen and (max-width: 991px) and (min-width: 767px) {
+
+    /* .sidebar {
+
+        width: 212px;
+    } */
 
     .container{
         padding-left: 10%;
@@ -1069,7 +1133,7 @@ font-size: 12px;
     }
 
     .second-img {
-        width: 100%;
+        width: 89%;
         padding-left: 0;
     }
 
@@ -1362,7 +1426,11 @@ font-size: 12px;
 @media screen and (max-width: 766px) and (min-width: 576px)  {
 
 
-    
+    /* .sidebar {
+
+        width: 212px;
+    } */
+
  
 
     .container{
@@ -1408,7 +1476,7 @@ font-size: 12px;
     }
 
     .second-img {
-        width: 100%;
+        width: 89%;
         padding-left: 0;
     }
     .section2 p {
@@ -1673,6 +1741,25 @@ font-size: 12px;
 
 @media screen and (max-width: 575px) and (min-width: 320px)  {
 
+
+
+
+    /* .sidebar {
+        padding-top: 20px;
+        width: 156px;
+        box-shadow : 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+        border-radius: 20px;
+    } */
+
+    .sidebar .closebtn {
+        right: 6px;
+        font-size: 37px;
+    }
+    .sidebar ul li a {
+      font-size: 11px;
+    }
+
+
     /* .carousel-inner .carousel-item>div {
         display: flex;
     } */
@@ -1795,7 +1882,7 @@ font-size: 12px;
     }
 
     .second-img {
-        width: 100%;
+        width: 89%;
         padding-left: 0;
     }
 
@@ -1894,7 +1981,7 @@ font-size: 12px;
     .img1 {
         margin-left: 5%;
         padding-top: 0px;
-        top: 17vh;
+        top: 117px;
     }
 
 

@@ -1,14 +1,14 @@
-<!doctype html>
+
 <html>
 
 <head>
-	<title>Web Guru</title>
+	<title>Contact - The Web Gurus LLC</title>
 	<!-- Favicon -->
 	<link href="images/favicon.png" rel="icon">
 
-
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="web gurus llc">
 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -22,13 +22,13 @@
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<a class="navbar-brand header-logo" href="index.html"><img src="images/logo-header.svg"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+			<button class="navbar-toggler " type="button"  data-target="#mySidebar"
+				aria-controls="mySidebar" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+				<img src="images/menu.png" />
 			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto" style="margin-left: 13%;">
+	
+			<div class="collapse navbar-collapse" id="mysidbar">
+				<ul class="navbar-nav mr-auto" style="margin-left: 13%;" >
 					<li class=" nav-item active ">
 						<a class="nav-link" href="about.html">ABOUT
 							US <span class="sr-only">(current)</span></a>
@@ -43,7 +43,7 @@
 					<li class="nav-item">
 						<a class="nav-link " href="teams.html">TEAM</a>
 					</li>
-
+	
 					<li class="nav-item">
 						<a class="nav-link" href="contact.html">CONTACT
 							US</a>
@@ -51,12 +51,40 @@
 				</ul>
 				<a href="https://calendly.com/thewebgurusllc" class="custom_btn  my-2 my-md-0"><button>BOOK A
 						MEETING</button></a>
-
+	
 			</div>
 		</nav>
 		<hr style=" width: 91%;">
+	
+	
+	
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)"
+				class="closebtn" onclick="closeNav()">
+				×
+			</a>
+			<ul class="navbar-nav mr-auto"  >
+				<li class=" nav-item active ">
+					<a class="nav-link" href="about.html">ABOUT
+						US <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="skills.html">OUR SKILLS</a>
+				</li>
+				<li>
+					<a class="nav-link " href="projects.html">OUR
+						PROJECTS</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link " href="teams.html">TEAM</a>
+				</li>
+				<li class="nav-item" style="margin-bottom: 9%;">
+					<a class="nav-link"  href="contact.html">CONTACT
+						US</a>
+				</li>
+			</ul>
+		</div>
 	</header>
-
 
 
 
@@ -281,6 +309,23 @@
 		</div>
 	</footer>
 
+
+	<script>
+		function openNav() {
+			document.getElementById(
+				"mySidebar").style.width = "212px";
+	
+		}
+
+		/* Set the width of the sidebar to 0
+		and the left margin of the page content to 0 */
+		function closeNav() {
+			document.getElementById(
+				"mySidebar").style.width = "0";
+			document.getElementById(
+				"main").style.marginLeft = "0";
+		}
+	</script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 
