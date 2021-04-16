@@ -631,6 +631,7 @@ button at top right corner */
  .footer-copyright{
     font-family: bodyfont;
     font-size: 13px;
+    color:white;
  }
 
  /******************** index *****************/
@@ -1038,6 +1039,10 @@ font-size: 12px;
 
 @media screen and (max-width: 1024px) and (min-width: 992px) {
 
+
+    .about_us {
+        height: 711px;
+    }
  
     .second p {
         top: 289px;
@@ -1146,7 +1151,7 @@ font-size: 12px;
 
  .about_us{
     background-position-x: 14%;
-    height: 168vh;
+    height:675px;
  }
 
 
@@ -1259,7 +1264,7 @@ font-size: 12px;
   }
   .banner1 p {
     margin-left: 19%;
-    line-height: 6vh;
+    line-height: 28px;
     font-size: 13px;
     top: 142px;
   }
@@ -1268,7 +1273,7 @@ font-size: 12px;
     height: 40px;
     margin-left: 16%;
     font-size: 13px;
-    top: 55vh;
+    top: 183px;
   }
   
   .main-back{
