@@ -694,7 +694,7 @@ button at top right corner */
   width: 184px;
   height: 56px;
   margin-left: 23%;
-  top: 7vw;
+  top: 99px;
   background: #243A55;
   border-radius: 10px;
   color: white;
@@ -777,7 +777,7 @@ button at top right corner */
   float: right;
   position: relative;
   top: 286px;
-  margin-right: 25%;
+  margin-right: 11vw;
   font-family: bodyfont;
   font-style: normal;
   font-weight: normal;
@@ -1039,6 +1039,41 @@ font-size: 12px;
 
 @media screen and (max-width: 1024px) and (min-width: 992px) {
 
+    .banner1 .subheading {
+        margin-left: 26%;
+        font-size: 3.2vw;
+    }
+
+    .banner1 .m_heading {
+        font-size: 3.2vw;
+        margin-left: 26%;
+    }
+
+    .banner1 p {
+        top: 77px;
+        margin-left: 28%;
+    }
+    .banner1 button{
+        top: 151px;
+        margin-left: 28%;
+      }
+
+      .second :nth-child(1) {
+        width: 105px;
+      }
+
+      .second :nth-child(2) {
+        width: 105px;
+      }
+
+      .second :nth-child(3) {
+        width: 105px;
+      }
+
+    .blue-back {
+        height: 159px;;
+    }
+
 
     .about_us {
         height: 711px;
@@ -1237,7 +1272,7 @@ font-size: 12px;
     top: 44px;
 }
 .blue-back {
-    height: 210px;
+    height: 123px;
 }
 
 /******************* index **************/
@@ -1265,7 +1300,7 @@ font-size: 12px;
   .banner1 p {
     margin-left: 19%;
     line-height: 28px;
-    font-size: 13px;
+    font-size: 12px;
     top: 142px;
   }
   .banner1 button{
@@ -1301,8 +1336,8 @@ font-size: 12px;
   .second :nth-child(1){
     width: 100px;
     position: relative;
-    top: 92px;
-    margin-left: 149px;
+    top: 98px;
+    margin-left: 133px;
   }
   
   .second :nth-child(2){
@@ -1502,7 +1537,8 @@ font-size: 12px;
         display: block;
         padding-left: 10%;
         width: 94%;
-        padding-right: 10%
+        padding-right: 10%;
+        margin-top: 59px;
     }
 
     .about_us .about1 {
@@ -1658,7 +1694,7 @@ font-size: 12px;
     width: 124px;
     height: 49px;
     margin-left: 6%;
-    top: 11vw;
+    top: 58px;
     border-radius: 10px;
    }
 
@@ -1841,20 +1877,6 @@ font-size: 12px;
     }
     
 
-    /* .carousel-inner2 .carousel-inner.carousel-item-right.active,
-    .carousel-inner2 .carousel-inner.carousel-item-next {
-        transform: translateX(100%);
-        opacity: 0;
-        transition: 5ms ease-in-out;
-    }
-
-    .carousel-inner2.carousel-inner .carousel-item-right.active,
-    .carousel-inner2 .carousel-inner.carousel-item-prev {
-        transform: translateX(-100%);
-        opacity: 0;
-        transition: 5ms ease-in-out;
-    } */
-
     .navbar-light .navbar-nav .nav-link {
         font-size: 9px !important;
     }
@@ -1910,7 +1932,7 @@ font-size: 12px;
         display: block;
         padding-left: 10%;
         width: 94%;
-        margin-top: 0;
+       margin-top: 81px;
     }
 
     .about_us .about1 {
@@ -2147,7 +2169,7 @@ font-size: 12px;
     }
 
     .banner1 p {
-        top: 11vh;
+        top: 45px;
         margin-left: 7%;
         line-height: 21px;
         font-size: 12px;
@@ -2159,7 +2181,7 @@ font-size: 12px;
     width: 90px;
     height: 34px;
     margin-left: 6%;
-    top: 17vh;
+    top: 75px;
     border-radius: 10px;
     font-size: 10px;
    }
@@ -2177,7 +2199,7 @@ font-size: 12px;
    .second {
     /* background-size: contain; */
     background-repeat: no-repeat;
-    height: 51vh;
+    height: 290px;
     position: relative;
     margin-top: -23px; 
     background-position-y: 0;
@@ -2202,7 +2224,7 @@ font-size: 12px;
 .second p {
     float: left;
     position: relative;
-    top: 38vh;
+    top: 235px;
     margin-left: 4%;
     color: white;
     text-decoration-line: underline;
@@ -2215,19 +2237,19 @@ font-size: 12px;
     margin-left: 39vw;
     width: 19vw;
     position: absolute;
-    top: 11vh;
+    top: 46px;
 }
 
 .second :nth-child(2){
     width: 20vw;
     margin-left: 49vw;
-    top: 18vh;
+    top: 94px;
     position: absolute;
 }
 .second :nth-child(3){
     width: 20vw;
     margin-left: 62vw;
-    top: 26vh;
+    top: 141px;
     position: absolute;
 }
 
