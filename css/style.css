@@ -43,10 +43,15 @@ font-family: bodyfont;
 
 .navbar-light .navbar-nav .nav-link {
     color:#28405B !important;
-    font-size: 14px !important;
+    font-size: 11px !important;
     font-family: headingfont !important;
     text-decoration: none !important;
 }
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #feb600  !important;
+}
+
 
 .sidebar ul li a {
     color:#28405B ;
@@ -653,12 +658,12 @@ button at top right corner */
   .custom_btn button {
     color: white !important;
     background: #243A55;
-    width: 158px;
-    height: 48px;
+    width: 138px;
+    height: 42px;
     border: none;
     border-radius: 10px;
     font-family: headingfont;
-    font-size: 14px;
+    font-size: 12px;
     cursor: pointer;
   }
 
@@ -935,6 +940,123 @@ font-size: 12px;
 }
 
 
+
+.line-payments{
+    position: absolute;
+    width: 222px;
+    height: 0px;
+    left: 359px;
+    top: 96px;
+    border-bottom: 3px solid #28405B;
+}
+
+.payment-dot{
+    width: 23px;
+    margin-left: 4%;
+    height: 23px;
+    background: #FF9100;
+    position: absolute;
+    border-radius: 50%;
+    top: 35px;
+}
+
+.payment-heading1{
+        padding-left: 11%;
+        font-size: 50px;
+        color: #28405B;
+        margin-top: 0;
+        font-family: footerheading;
+}
+
+.payment-heading2 {
+    padding-left: 11%;
+    font-size: 50px;
+    color: #FF9100;
+    margin-bottom: 0;
+    font-family: footerheading;
+    position: relative;
+    top:-14px;
+}
+
+.payment-p1{
+    color: #485057;
+    font-size: 20px;
+    padding-left: 11%;
+    font-family: bodyfont;
+}
+
+.par-code {
+    padding-top: 6%;
+}
+
+.par-code1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+.par-code1{
+    background-color: #e3e2e2;
+    width: 50%;
+    margin-left: 10%;
+    padding-bottom: 1px;
+    padding-top: 16px;
+    border-radius: 22px;
+}
+.par-code1 img{
+    width: 85%;
+    /* margin-left: 2%; */
+}
+
+.payment-wallet img{
+   position: absolute;
+}
+.payment-wallet h5{
+    margin-left: 109px;
+    margin-top: 9%;
+    position: relative;
+}
+.link-payment{
+    color: #ffb700;
+    font-size: 14px;
+    padding-left: 13px;
+    /* top: 12px; */
+    padding-top: 6px;
+    text-decoration-line: underline;
+}
+
+.payment-wallet p{
+    padding-left: 113px;
+    color: #485057;
+    font-family: bodyfont;
+    /* width: 25px; */
+    font-size: 1.1rem;
+}
+
+
+
+.par-1{
+    font-size: 1.1rem;
+    padding-left: 111px;
+    color: #485057;
+}
+
+.par-2{
+    font-size: 1.1rem;
+    padding-left: 111px;
+    position: relative;
+    top: -13px;
+    color: #485057;
+}
+
+
+
+
+
+
+
+
 /************************ carusal **************/
 
 .img-2 img {
@@ -986,19 +1108,7 @@ font-size: 12px;
     transition:  ease-in-out;
 
 }
-/* @media (max-width: 575px) {
 
-    .carousel-inner .carousel-item-right.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(50%);
-    }
-
-    .carousel-inner .carousel-item-left.active,
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(-50%);
-    }
-
-} */
 
 /* large - display 3 */
 @media (min-width: 576px) {
@@ -1125,11 +1235,73 @@ font-size: 12px;
 
 @media screen and (max-width: 991px) and (min-width: 767px) {
 
-    /* .sidebar {
+    .payment-dot {
+        width: 14px;
+        margin-left: 1%;
+        height: 14px;
+        top: 11px;
+    }
 
-        width: 212px;
-    } */
+    .payment-heading1 {
+        font-size: 37px;
+    }
 
+    .payment-heading2 {
+        font-size: 37px;
+        position: relative;
+        top: -10px;
+    }
+
+    .payment-p1 {
+        font-size: 15px;
+    }
+
+    .line-payments {
+        width: 30%;
+        height: 0px;
+        left: 262px;
+        top: 72px;
+    }
+
+    .payment-wallet img {
+        width: 70px;
+    }
+
+    .payment-wallet h5 {
+        margin-left: 24%;
+        margin-top: 9%;
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .link-payment {
+        font-size: 15px;
+        padding-left: 5px;
+        padding-top: 6px;
+    }
+
+    .payment-wallet p {
+        padding-left: 24%;
+        font-size: 1rem;
+    }
+    .par-1{
+        font-size: 1rem;
+        padding-left: 24%;
+    }
+
+    .par-2{
+        position:relative;
+        font-size: 1rem;
+        padding-left: 24%;
+        top:-15px;
+    }
+
+    .par-code1 {
+        width: 50%;
+    }
+    .par-code1 p{
+        font-size: 0.7rem;
+    }
     .container{
         padding-left: 10%;
     }
@@ -1472,11 +1644,73 @@ font-size: 12px;
 @media screen and (max-width: 766px) and (min-width: 576px)  {
 
 
-    /* .sidebar {
+    .payment-dot {
+        width: 14px;
+        margin-left: 1%;
+        height: 14px;
+        top: 11px;
+    }
 
-        width: 212px;
-    } */
+    .payment-heading1 {
+        font-size: 37px;
+    }
 
+    .payment-heading2 {
+        font-size: 37px;
+        position: relative;
+        top: -10px;
+    }
+
+    .payment-p1 {
+        font-size: 15px;
+    }
+
+    .line-payments {
+        width: 36%;
+        height: 0px;
+        left: 287px;
+        top: 72px;
+    }
+
+    .payment-wallet img {
+        width: 60px;
+    }
+
+    .payment-wallet h5 {
+        margin-left: 13%;
+        margin-top: 9%;
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    .link-payment {
+        font-size: 15px;
+        padding-left: 5px;
+        padding-top: 6px;
+    }
+
+    .payment-wallet p {
+        padding-left: 13%;
+        font-size: 1rem;
+    }
+    .par-1{
+        font-size: 1rem;
+        padding-left: 13%;
+    }
+
+    .par-2{
+        position:relative;
+        font-size: 1rem;
+        padding-left: 13%;
+        top:-15px;
+    }
+
+    .par-code1 {
+        width: 50%;
+    }
+    .par-code1 p{
+        font-size: 0.7rem;
+    }
  
 
     .container{
@@ -1788,15 +2022,73 @@ font-size: 12px;
 
 @media screen and (max-width: 575px) and (min-width: 320px)  {
 
+    .payment-dot {
+        width: 14px;
+        margin-left: 1%;
+        height: 14px;
+        top: 11px;
+    }
 
+    .payment-heading1 {
+        font-size: 25px;
+    }
 
+    .payment-heading2 {
+        font-size: 25px;
+        position: relative;
+        top: -10px;
+    }
 
-    /* .sidebar {
-        padding-top: 20px;
-        width: 156px;
-        box-shadow : 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-        border-radius: 20px;
-    } */
+    .payment-p1 {
+        font-size: 11px;
+    }
+
+    .line-payments {
+        width: 23%;
+        height: 0px;
+        left: 199px;
+        top: 49px;
+    }
+
+    .payment-wallet img {
+        width: 50px;
+    }
+
+    .payment-wallet h5 {
+        margin-left: 24%;
+        margin-top: 9%;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .link-payment {
+        font-size: 12px;
+        padding-left: 5px;
+        padding-top: 6px;
+    }
+
+    .payment-wallet p {
+        padding-left: 24%;
+        font-size: 0.5rem;
+    }
+    .par-1{
+        font-size:0.7rem;
+        padding-left: 24%;
+    }
+
+    .par-2{
+        position:relative;
+        font-size:0.7rem;
+        padding-left: 24%;
+        top:-15px;
+    }
+
+    .par-code1 {
+        width: 50%;
+    }
+    .par-code1 p{
+        font-size: 0.7rem;
+    }
 
     .sidebar .closebtn {
         right: 6px;
