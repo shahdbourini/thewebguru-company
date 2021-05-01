@@ -1024,6 +1024,7 @@ font-size: 12px;
     /* top: 12px; */
     padding-top: 6px;
     text-decoration-line: underline;
+    cursor: pointer;
 }
 
 .payment-wallet p{

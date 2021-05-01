@@ -1,21 +1,21 @@
 <html>
 
-<head>
-    <title>Payments - The Web Gurus LLC</title>
-    <!-- Favicon -->
-    <link href="images/favicon.png" rel="icon">
-
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="web gurus llc">
-
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <script id="ze-snippet"
-        src="https://static.zdassets.com/ekr/snippet.js?key=1bcb19a3-0545-4076-9be4-ab034b0e8816"> </script>
-</head>
+    <head>
+        <title>Payments - The Web Gurus LLC</title>
+        <!-- Favicon -->
+        <link href="images/favicon.png" rel="icon">
+    
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Projects includes; MEAN, MERN, MEVN, Shopify, Woocommerce, WordPress, Laravel, Custom PHP, Business Management Software, Mobile applications, ecommerce system development and more">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script id="ze-snippet"
+            src="https://static.zdassets.com/ekr/snippet.js?key=1bcb19a3-0545-4076-9be4-ab034b0e8816"> </script>
+    
+    </head>
 
 <body>
     <header>
@@ -113,8 +113,8 @@
 
             <div class="payment-wallet">
                 <img src="images/payment-icon.svg" />
-                <h5><b>Wallet Address</b> <a href="#" class="link-payment">Click to Copy</a></h5>
-                <p>0x677a6AA0a96f47FDF771b3e5bA21B6BB7f359F26</p>
+                <h5><b>Wallet Address</b> <span class="link-payment" onclick="copyToClipboard('#code')">Click to Copy</span></h5>
+                <p id="code">0x677a6AA0a96f47FDF771b3e5bA21B6BB7f359F26</p>
                 <h5><b>ACH/Direct Payment Information</b></h5>
             </div>
             <div class="payment-wallet2">
@@ -122,6 +122,8 @@
                 <p class="par-2"><b>Account Number: </b> 99240485</p>
             </div>
 
+<!-- The text field -->
+<!-- <input type="text" value="Hello World" id="myInput"> -->
 
 
 
@@ -280,14 +282,23 @@
 
         }
 
-        /* Set the width of the sidebar to 0
-        and the left margin of the page content to 0 */
         function closeNav() {
             document.getElementById(
                 "mySidebar").style.width = "0";
             document.getElementById(
                 "main").style.marginLeft = "0";
         }
+
+
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+            alert("copied ");
+          }
+
     </script>
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
