@@ -1167,12 +1167,6 @@ hr {
 }
 
 
-.review img{    
-    padding-left: 34px;
-    position: relative;
-    top: 13px;
-    width: 130px;
-}
 
 .review p{
     margin-top: 30px;
@@ -1193,6 +1187,15 @@ hr {
     padding-top: 16px;
 }
 
+.review-stars{
+    padding-left: 35px;
+    padding-top: 11px;
+    display: inline-flex;
+}
+
+.review-stars img{
+    width: 18px;
+}
 
 /************************ carusal **************/
 
@@ -2210,9 +2213,8 @@ hr {
     .review h5 {
         font-size: 18px;
     }
-    .review img {
-        top: 13px;
-        width: 110px;
+    .review-stars img {
+        width: 13px;
     }
 
     .review .clients-date {
