@@ -1067,28 +1067,41 @@ font-size: 12px;
 .clients-title2{
     margin-top: 10%;
 }
-
-.header-img{
-    width: 424px;
+.header{
+    width: fit-content;
     position: relative;
-    top: 33px;
+    top: 49px;
+    padding-top: 1px;
 }
 
+.header-name{
 
-
-.name{
-    position: absolute;
-    padding-left: 37px;
     font-family: headingfont;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 0px;
+    font-size: 17px;
+    color: #28405B;
+    /* padding: 14px 187px 48px 37px; */
+    height: 9%;
+    padding-right: 59px;
+    padding-left: 38px;
+    padding-top: 19px;
+}
+
+
+.review{
+    padding-bottom: 3%;  
+    display: flex; 
+}
+
+.color-name1{
+    background: #ff9100;
     color: #28405B;
 }
 
-.name2{
+.color-name2{
     color: #FF9100;
+    background: #28405B;
 }
 
 
@@ -1096,20 +1109,20 @@ font-size: 12px;
 .review h5{
     padding-left: 37px;
     font-family: headingfont;
-    font-size: 25px;
-    line-height: 0px;
+    font-size: 21px;
     padding-top: 76px;
     padding-bottom: 7px;
 }
 
 .reviewColor{
-    background-image: url("../images/blue2-rectangle.svg");
-    padding-bottom: 7%;    
+    padding-bottom: 3%;  
+    background-color: #28405B; 
+    display: flex; 
 }
 
 .reviewColor2{
-    background-image: url("../images/orange2-rectangle.svg");
-    padding-bottom: 7%;   
+
+    background-color:#ff9100;;
 }
 .reviewColor h5{    
     color: #FF9100;  
@@ -1124,7 +1137,6 @@ font-size: 12px;
     font-style: italic;
     font-weight: 500;
     font-size: 13px;
-    line-height: 17px;
     color: #FFFFFF;
     padding-left: 37px;
     position: relative;
@@ -1184,7 +1196,8 @@ hr {
 
 .review-times{
     float: right;
-    padding-top: 16px;
+    padding-top: 27px;
+    z-index: 50;
 }
 
 .review-stars{
@@ -1197,6 +1210,9 @@ hr {
     width: 18px;
 }
 
+.direction-datails{
+    float: left;
+}
 /************************ carusal **************/
 
 .img-2 img {
@@ -1774,17 +1790,36 @@ hr {
 }
 
 
+.header-name {
+    font-size: 18px;
+    padding: 20px 2px 43px 37px;
+    height: 9%;
+}
 
+.header {
+    width: 68%;
+    top: 57px;
+}
 
+.review h5 {
+    font-size: 20px;
+}
 
-
+.clients-RightDiv {
+    font-size: 23px;
   }
+
+  .clients-num {
+    font-size: 22px;
+  }
+
+}
 
 
 @media screen and (max-width: 766px) and (min-width: 576px)  {
 
 
-    .name {
+    /* .name {
         font-size: 25px;
         line-height: 8px;
     }
@@ -1792,8 +1827,24 @@ hr {
     .header-img {
     width: 319px;
     top: 33px;
+    } */
+
+
+    .review h5 {
+        font-size: 17px;
+        padding-right: 5px;
+    }
+    
+    .header-name {
+        font-size: 16px;
+        padding: 20px 2px 43px 37px;
+        height: 11%;
     }
 
+    .header {
+        width: 81%;
+        top: 57px;
+    }
     .review p {
         font-size: 17px;
         width: 98%;
@@ -2190,9 +2241,20 @@ hr {
     top: 50px;
     }
 
-    .name {
+    /* .name {
         font-size: 16px;
         line-height: 12px;
+    } */
+
+    .header-name {
+        font-size: 14px;
+        padding: 20px 2px 43px 37px;
+        height: 10%;
+    }
+
+    .header {
+        width: 81%;
+        top: 57px;
     }
 
     .review p {
@@ -2211,7 +2273,7 @@ hr {
     }
 
     .review h5 {
-        font-size: 18px;
+        font-size: 13px;
     }
     .review-stars img {
         width: 13px;
